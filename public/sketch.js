@@ -4,7 +4,7 @@ function setup(){
   createCanvas(400,400)
   background(100)
   //Connect to server via socket
-  socket = io.connect('http://localhost:3000')
+  socket = io()
   socket.on('serverDraw', newDrawing)
 }
 
